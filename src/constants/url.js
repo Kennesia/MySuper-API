@@ -1,1 +1,1 @@
-export const baseURL = "https://megane-api.fiandev.my.id";
+export const baseURL = "https://mysuper-api.vercel.app";
