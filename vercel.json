@@ -1,0 +1,19 @@
+{
+  "buildCommand": "npm install && npm run build && ./build && pip install -r requirements.txt && flask run",
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "static/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ]
+}
